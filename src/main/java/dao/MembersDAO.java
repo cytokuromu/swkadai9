@@ -1,15 +1,18 @@
 package dao;
 
-import java.lang.reflect.Member;
-import java.sql.Connection;
+
+//import java.sql.Connection;
 import java.util.ArrayList;
 import java.util.List;
 
+import model.Login;
+import model.Member;
+
 public class MembersDAO {
-	private final String DRIVER_NAME = "org.apache.derby.jdbc.ClientDriver";
-    private final String JDBC_URL = "jdbc:derby://localhost:1527/db0104";
-    private final String DB_USER = "db";
-    private final String DB_PASS = "db";
+	//private final String DRIVER_NAME = "org.apache.derby.jdbc.ClientDriver";
+    //private final String JDBC_URL = "jdbc:derby://localhost:1527/db0104";
+    //private final String DB_USER = "db";
+    //private final String DB_PASS = "db";
     String[] name=new String[1000];
 	String[] id=new String[1000];
 	String[] phone=new String[1000];
@@ -20,7 +23,7 @@ public class MembersDAO {
 	int allidx=0;
 
 	public Member findByLogin(Login login) {
-        Connection conn = null;
+        //Connection conn = null;
         Member member = null;
         id[0]="1111";
 	name[0]="umeko";
@@ -44,7 +47,7 @@ return null;
     }
 
     public List<Member> findAll() {
-        Connection conn = null;
+        //Connection conn = null;
         List<Member> memberList = new ArrayList<Member>();       
         for(int i=0;i<=allidx;i++){
             String nameset = name[i];
