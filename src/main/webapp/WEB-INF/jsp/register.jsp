@@ -18,7 +18,7 @@
                 ${errorMsg}</p>
             </c:if>
 
-        <form action="/AD170104/RegisterServlet" method="post">
+        <form action="/RegisterServlet" method="post">
 
             *名前*<input type="text" name="name" value="${name}"><br>
             *ID*<input type="text" name="Id" value="${Id}"><br>

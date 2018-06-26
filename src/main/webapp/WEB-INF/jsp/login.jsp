@@ -14,11 +14,11 @@
     <c:if test="${not empty errorMsg}">
         <h4><font color="tomato">${errorMsg}</font></h4>
     </c:if>
-    <form action="/AD170104/LoginServlet" method="post">
+    <form action="/LoginServlet" method="post">
         ID:<input type="text" name="Id"><br>
         パスワード:<input type="password" name="pass"><br>
         <input type="submit" value="ログイン">
     </form>
-    <div class="link"><a href="/AD170104/WelcomeServlet">TOPへ</a></div>
+    <div class="link"><a href="/WelcomeServlet">TOPへ</a></div>
 </body>
 </html>

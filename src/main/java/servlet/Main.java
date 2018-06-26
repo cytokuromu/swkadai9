@@ -19,7 +19,7 @@ import model.Product;
 /**
  * Servlet implementation class Main
  */
-@WebServlet("/Main")
+@WebServlet(name="Main" , urlPatterns = {"/Main"})
 public class Main extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
@@ -87,7 +87,7 @@ public class Main extends HttpServlet {
         session.setAttribute("month", month);
         session.setAttribute("goods", goods);
         RequestDispatcher dispatcher
-                = request.getRequestDispatcher("/WEB-INF/jsp/main.jsp");
+                = request.getRequestDispatcher("/main/webapp/WEB-INF/jsp/main.jsp");
         dispatcher.forward(request, response);
 	}
 

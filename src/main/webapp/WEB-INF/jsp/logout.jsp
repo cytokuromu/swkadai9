@@ -10,6 +10,6 @@
     <body>
         <div class="title2">つだぞん.com</div>
         <p>ログアウトしました</p>
-        <div class="link"><a href="/AD170104/WelcomeServlet">TOPへ</a></div>
+        <div class="link"><a href="/WelcomeServlet">TOPへ</a></div>
     </body>
 </html>

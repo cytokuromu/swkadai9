@@ -12,7 +12,7 @@
         <div class="title">つだぞん.com</div>  
         <c:if test="${result!=true}">
             <div class="link3">
-                <a href="/AD170104/LoginServlet">ログインする</a> &nbsp; &nbsp; <a href="/AD170104/RegisterServlet">会員登録する</a><br>
+                <a href="/LoginServlet">ログインする</a> &nbsp; &nbsp; <a href="/RegisterServlet">会員登録する</a><br>
             </div>
         </c:if>
         
@@ -26,14 +26,14 @@
                 </c:forEach>
                 合計金額：<c:out value="${total}" /><br><br>
 
-                <a href="/AD170104/BuyServlet">購入する</a>
+                <a href="/BuyServlet">購入する</a>
             </p>
         </c:if>
         <c:forEach var="product" items="${productList}">
             <p><h3>[ <c:out value="${product.productname}" /> ]</h3>
             <img border="1" src="${product.productnomber}.png" width="128" height="128" alt="${product.productname}" style="background-color:white;"><br>
             価格：<c:out value="${product.price}" />円</p>
-        <form action="/AD170104/ReviewServlet" method="get">
+        <form action="/ReviewServlet" method="get">
             <input type="hidden" name="productnomber" value="${product.productnomber}">
             <input type="hidden" name="productname" value="${product.productname}">
             <input type="submit" value="レビューへ">
@@ -46,9 +46,9 @@
     </c:forEach>
     <br><br>
     <div class="link">
-        <a href="/AD170104/WelcomeServlet">TOPへ</a><br>
+        <a href="/WelcomeServlet">TOPへ</a><br>
         <c:if test="${result==true}">
-            <a href="/AD170104/Logout">ログアウトする</a>
+            <a href="/Logout">ログアウトする</a>
         </c:if>
 
     </div>

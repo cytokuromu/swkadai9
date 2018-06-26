@@ -12,8 +12,8 @@
         <div class="title2">つだぞん.com</div>
         <p><c:out value="${Id}" />さん、つだぞん.comへようこそ</p>
         <div class="link">
-            <a href="/AD170104/Main">商品を閲覧</a><br>
-            <a href="/AD170104/WelcomeServlet">TOPへ</a>
+            <a href="/Main">商品を閲覧</a><br>
+            <a href="/WelcomeServlet">TOPへ</a>
         </div>
     </body>
 </html>
