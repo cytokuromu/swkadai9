@@ -12,7 +12,7 @@
         <div class="title2">つだぞん.com</div>
         <c:out value="${Id}" />さん、会員登録完了しました。<br><br>
         <div class="link">
-            <a href="/AD170104/WelcomeServlet">TOPへ</a>
+            <a href="/WelcomeServlet">TOPへ</a>
         </div>
     </body>
 </html>

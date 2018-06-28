@@ -4,15 +4,16 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>ログインしていません</title>
+<title>つだぞん.comへようこそ</title>
         <link rel="stylesheet" type="text/css" href="/AD170104/css/body.css">
     </head>
     <body>
-        <div class="title2">つだぞん.com</div>
-        <p>あなたはログインしていません。</p>
-        <div class="link">
-            会員の方⇨<a href="/AD170104/LoginServlet">ログイン</a><br>
-            まだ会員登録がお済みでない方⇨<a href="/AD170104/RegisterServlet">会員登録</a>
+        <div class="title">つだぞん.com</div>
+        <div class="link2">
+            <a href="/LoginServlet">ログイン</a><br>
+            <a href="/RegisterServlet">会員登録</a><br>
+            <a href="/Main">商品を閲覧</a>
+
         </div>
     </body>
 </html>

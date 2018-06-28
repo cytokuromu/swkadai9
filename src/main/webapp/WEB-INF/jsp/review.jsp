@@ -42,7 +42,7 @@
             <input type="hidden" name="price" value="${product.price}">
             <input type="submit" value="カートに入れる">
         </form>
-        <a href="/AD170104/Main">商品一覧画面へ</a><br>
+        <a href="/Main">商品一覧画面へ</a><br>
     </div>
 </body>
 </html>

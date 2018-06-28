@@ -18,7 +18,7 @@
                 ${errorMsg}</p>
             </c:if>
 
-        <form action="/AD170104/RegisterServlet" method="post">
+        <form action="/RegisterServlet" method="post">
 
             *名前*<input type="text" name="name" value="${name}"><br>
             *ID*<input type="text" name="Id" value="${Id}"><br>
@@ -29,6 +29,6 @@
             <input type="submit" value="会員登録">
         </form>
         <br>
-        <div class="link"><a href="/AD170104/WelcomeServlet">TOPへ</a></div>
+        <div class="link"><a href="/WelcomeServlet">TOPへ</a></div>
     </body>
 </html>
