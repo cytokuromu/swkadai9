@@ -37,10 +37,10 @@ public class Main extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		//response.getWriter().append("Served at: ").append(request.getContextPath());
-		GetProductListLogic getProductListLogic = new GetProductListLogic();
+		//GetProductListLogic getProductListLogic = new GetProductListLogic();
         HttpSession session = request.getSession();
-        List<Product> productList = getProductListLogic.execute();
-        session.setAttribute("productList", productList);
+        //List<Product> productList = getProductListLogic.execute();
+        //session.setAttribute("productList", productList);
         int month=0;
         String goods="";
         int months[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12};
@@ -87,7 +87,7 @@ public class Main extends HttpServlet {
         session.setAttribute("month", month);
         session.setAttribute("goods", goods);
         RequestDispatcher dispatcher
-                = request.getRequestDispatcher("/main/webapp/WEB-INF/jsp/main.jsp");
+                = request.getRequestDispatcher("/WEB-INF/jsp/main.jsp");
         dispatcher.forward(request, response);
 	}
 

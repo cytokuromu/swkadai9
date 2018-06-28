@@ -17,7 +17,7 @@
         </c:if>
         
         <p><h1>${month}月のおすすめは　${goods}　です</h1></p>
-
+<!--  
         <c:if test="${not empty cartList}">
             <p>
                 カートの中身<br>
@@ -44,6 +44,7 @@
             <input type="submit" value="カートに入れる">
         </form>
     </c:forEach>
+    -->
     <br><br>
     <div class="link">
         <a href="/WelcomeServlet">TOPへ</a><br>
