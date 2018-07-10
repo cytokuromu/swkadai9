@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>つだぞん.comへようこそ</title>
-        <link rel="stylesheet" type="text/css" href="/AD170104/css/body.css">
+        <link rel="stylesheet" type="text/css" href="/css/body.css">
     </head>
     <body>
         <div class="title">つだぞん.com</div>

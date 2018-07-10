@@ -40,8 +40,10 @@ public class ReviewServlet extends HttpServlet {
 		request.setCharacterEncoding("UTF-8");
         int productnomber = Integer.parseInt(request.getParameter("productnomber"));
         String productname = request.getParameter("productname");
+        System.out.println(productname);
+        System.out.println(productnomber);
         //processRequest(request, response);
-        GetReviewListLogic getMutterListLogic = new GetReviewListLogic();
+        /*GetReviewListLogic getMutterListLogic = new GetReviewListLogic();
         List<Review> reviewList = getMutterListLogic.execute(productnomber);
         request.setAttribute("reviewList", reviewList);
         GetProductListLogic getProductListLogic = new GetProductListLogic();
@@ -50,6 +52,9 @@ public class ReviewServlet extends HttpServlet {
         request.setAttribute("productnomber", productnomber);
         request.setAttribute("productname", productname);
         //HttpSession session = request.getSession();
+         */
+        request.setAttribute("productnomber", productnomber);
+        request.setAttribute("productname", productname);
         RequestDispatcher dispatcher
                 = request.getRequestDispatcher("/WEB-INF/jsp/review.jsp");
         dispatcher.forward(request, response);

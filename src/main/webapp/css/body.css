@@ -1,0 +1,80 @@
+@charset "UTF-8";
+body {
+    font-family: 'TsukuARdGothic-Regular','Verdana','Yu Gothic UI',sans-serif;
+    background-color: #98fb98;
+}
+.title {
+    font-size: 60px;
+    text-align: center;
+    background-image: url(tsudazon.jpeg)
+}
+.title2 {
+    font-size: 40px;
+    background-image: url(tsudazon.jpeg)
+}
+.title3 {
+    font-size: 30px;
+}
+p {
+    font-size: 25px;
+}
+.link {
+    font-size: 20px;
+}
+.link2 {
+    font-size: 20px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    -ms-transform: translate(-50%,-50%);
+    -webkit-transform : translate(-50%,-50%);
+    transform : translate(-50%,-50%);
+}
+.link3 {
+    font-size: 15px;
+    text-align : right;
+}
+.info {
+    font-size: 15px;
+}
+
+.box15 {
+    width: 350px;
+    height: 350px;
+    padding: 0.2em 0.5em;
+    margin: 2em 0;
+    color: #ffffff;
+    background-image: url(cork01.jpg);
+    background-size: cover;
+    box-shadow: 0px 0px 0px 10px #ffef85;
+    border: dashed 2px #acd879;
+    border-radius: 8px;
+}
+.box15 p {
+    margin: 0; 
+    padding: 0;
+}
+
+.ribbon {
+    display: inline-block;
+    position: relative;
+    height: 60px;
+    line-height: 60px;
+    vertical-align: middle;
+    text-align: center;
+    padding: 7px 0;
+    font-size: 18px;
+    background: #ffef85;
+    color: #FFF;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+.ribbon h2 {
+    vertical-align: middle;
+    margin: 0;
+    padding: 0 30px;
+    border-top: dashed 2px rgba(255, 255, 255, 0.5);
+    border-bottom: dashed 2px rgba(255, 255, 255, 0.5);
+    line-height: 42px;
+}

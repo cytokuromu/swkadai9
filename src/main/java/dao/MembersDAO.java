@@ -87,8 +87,18 @@ return null;
         	pass[idx]=member.getPass();
         	address[idx]=member.getAddress();
                 System.out.println("A "+idx);*/
+        	
+        	id.add(member.getId());
+            name.add(member.getName());
+            phone.add(member.getPhone());
+            mail.add(member.getMail());
+            address.add(member.getAddress());
+            pass.add(member.getPass());
+        	allidx++;
         	return true;
-        }else return false;
+        }else return false;       
     }
-
+    public String getId(int i) {
+        return id.get(i);
+    }
 }
