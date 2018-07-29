@@ -6,7 +6,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>つだぞん.com</title>
-        <link rel="stylesheet" type="text/css" href="/AD170104/css/body.css">
+        <link rel="stylesheet" type="text/css" href="/css/body.css">
     </head>
     <body>
         <div class="title">つだぞん.com</div>  
@@ -16,8 +16,46 @@
             </div>
         </c:if>
         
-        <p><h1>${month}月のおすすめは　${goods}　です</h1></p>
-<!--  
+         <center>
+        <div class="box15">
+            <div class="ribbon"><h2>${month}月のおすすめ商品<br></h2></div>
+            <h1>${goods}</h1>
+            <img src ="${picname}.png" width="200" height="200">
+        </div>
+    </center>
+
+<p><h3>[ <c:out value="${product1name}" /> ]</h3>
+            <img border="1" src="${product1no}.png" width="128" height="128" alt="${product1name}" style="background-color:white;"><br>
+            価格：<c:out value="${product1price}" />円</p>
+            <form action="/ReviewServlet" method="get">
+            <input type="hidden" name="productnomber" value="${product1no}">
+            <input type="hidden" name="productname" value="${product1name}">
+            <input type="submit" value="レビューへ">
+<p><h3>[ <c:out value="${product2name}" /> ]</h3>
+            <img border="1" src="${product2no}.png" width="128" height="128" alt="${product2name}" style="background-color:white;"><br>
+            価格：<c:out value="${product2price}" />円</p>
+            <form action="/ReviewServlet" method="get">
+            <input type="hidden" name="productnomber" value="${product2no}">
+            <input type="hidden" name="productname" value="${product2name}">
+            <input type="submit" value="レビューへ">
+<p><h3>[ <c:out value="${product3name}" /> ]</h3>
+            <img border="1" src="${product3no}.png" width="128" height="128" alt="${product3name}" style="background-color:white;"><br>
+            価格：<c:out value="${product3price}" />円</p>
+            <form action="/ReviewServlet" method="get">
+            <input type="hidden" name="productnomber" value="${product3no}">
+            <input type="hidden" name="productname" value="${product3name}">
+            <input type="submit" value="レビューへ">
+<p><h3>[ <c:out value="${product4name}" /> ]</h3>
+            <img border="1" src="${product4no}.png" width="128" height="128" alt="${product4name}" style="background-color:white;"><br>
+            価格：<c:out value="${product4price}" />円</p>   
+            <form action="/ReviewServlet" method="get">
+            <input type="hidden" name="productnomber" value="${product4no}">
+            <input type="hidden" name="productname" value="${product4name}">
+            <input type="submit" value="レビューへ">
+        </form>
+        
+        
+ <!--
         <c:if test="${not empty cartList}">
             <p>
                 カートの中身<br>
@@ -44,7 +82,7 @@
             <input type="submit" value="カートに入れる">
         </form>
     </c:forEach>
-    -->
+-->
     <br><br>
     <div class="link">
         <a href="/WelcomeServlet">TOPへ</a><br>

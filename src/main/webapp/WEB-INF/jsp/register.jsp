@@ -6,7 +6,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>会員登録</title>
-        <link rel="stylesheet" type="text/css" href="/AD170104/css/body.css">
+        <link rel="stylesheet" type="text/css" href="/css/body.css">
     </head>
     <body>
         <div class="title2">つだぞん.com</div>
