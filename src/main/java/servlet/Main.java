@@ -1,6 +1,7 @@
 package servlet;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 import java.util.List;
@@ -41,6 +42,7 @@ public class Main extends HttpServlet {
         HttpSession session = request.getSession();
         //List<Product> productList = getProductListLogic.execute();
         //session.setAttribute("productList", productList);
+        
         int month=0;
         String goods="";
         String picname="";
@@ -100,12 +102,13 @@ public class Main extends HttpServlet {
         session.setAttribute("month", month);
         session.setAttribute("goods", goods);
         session.setAttribute("picname", picname);
-        session.setAttribute("product1name", "掃除機");
-        session.setAttribute("product1no", "1");
-        session.setAttribute("product1price", "5000");
         session.setAttribute("product2name", "鉛筆");
         session.setAttribute("product2no", "2");
         session.setAttribute("product2price", "120");
+        session.setAttribute("product1name", "掃除機");
+        session.setAttribute("product1no", "1");
+        session.setAttribute("product1price", "5000");
+        
         session.setAttribute("product3name", "ジャム");
         session.setAttribute("product3no", "3");
         session.setAttribute("product3price", "200");

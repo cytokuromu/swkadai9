@@ -24,8 +24,8 @@ public class MembersDAO {
 	String[] phone=new String[1000];
 	String[] mail=new String[1000];
 	String[] address=new String[1000];
-	String[] pass=new String[1000];
-	*/
+	String[] pass=new String[1000];*/
+	
 	int idx=0;
 	int allidx=0;
 
@@ -45,7 +45,14 @@ public class MembersDAO {
         address.add("Aa");
         pass.add("0000");
 	//System.out.println(id[1]);
-
+       /* System.out.println("A:"+allidx);
+    	System.out.println(id.get(allidx));
+    	System.out.println(name.get(allidx));
+    	System.out.println(phone.get(allidx));
+    	System.out.println(mail.get(allidx));
+    	System.out.println(address.get(allidx));
+    	System.out.println(pass.get(allidx));
+*/
         	for(int i=0;i<=allidx;i++){
             	if(login.getId().equals(id.get(i))){
                     System.out.println("A");
@@ -95,6 +102,14 @@ return null;
             address.add(member.getAddress());
             pass.add(member.getPass());
         	allidx++;
+        	
+        	/*System.out.println(allidx-1);
+        	System.out.println(id.get(allidx-1));
+        	System.out.println(name.get(allidx-1));
+        	System.out.println(phone.get(allidx-1));
+        	System.out.println(mail.get(allidx-1));
+        	System.out.println(address.get(allidx-1));
+        	System.out.println(pass.get(allidx-1));*/
         	return true;
         }else return false;       
     }

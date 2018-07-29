@@ -53,6 +53,8 @@
             <input type="hidden" name="productname" value="${product4name}">
             <input type="submit" value="レビューへ">
         </form>
+        
+        
  <!--
         <c:if test="${not empty cartList}">
             <p>

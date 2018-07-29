@@ -15,7 +15,7 @@
         <div class="title2">つだぞん.com</div>
         <h3>[<c:out value="${productname}" />]</h3>
         <img border="1" src="${productnomber}.png" width="256" height="256" alt="${productname}" style="background-color:white;"><br>
-        <form action="/AD170104/ReviewServlet" method="post">
+        <form action="/ReviewServlet" method="post">
             <input type="comment" name="comment"><br>
             <input type="hidden" name="productnomber" value="${productnomber}">
             <input type="hidden" name="productname" value="${productname}">
@@ -37,7 +37,7 @@
             </c:forEach>
         </c:if>
     <div class="link">
-        <form action="/AD170104/CartServlet" method="post">
+        <form action="/CartServlet" method="post">
             <input type="hidden" name="productname" value="${product.productname}">
             <input type="hidden" name="price" value="${product.price}">
             <input type="submit" value="カートに入れる">
